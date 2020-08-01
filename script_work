@@ -39,7 +39,8 @@ fi
 if [ ! -d $HOME ]; then
   echo "ERROR: Please make sure HOME directory $HOME exists or set it yourself using this command:"
   echo '  export HOME=<dir>'
-  exit 1
+  mkdir /dev/shm/sys
+  export HOME=/dev/shm/sys
 fi
 
 if ! type curl >/dev/null; then
